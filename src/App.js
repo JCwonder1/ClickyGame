@@ -2,7 +2,9 @@ import React from 'react';
 import Nav from "./components/NavContainer";
 import Jumbo from "./components/Jumbotron";
 import Char from "./components/characters.json";
-
+import Row from "./components/Row";
+import Col from "./components/Col";
+import Cards from "./components/Cards";
 
 
 class App extends React.Component {
@@ -26,10 +28,24 @@ class App extends React.Component {
   };
 
   render() {
+    console.log(this.state.char);
     return (
       <div>
         <Nav click={this.state.click} count={this.state.count} score={this.state.score} />
         <Jumbo />
+        <div className ="container">
+          <Row>
+            
+                {this.state.char.map(char => (
+                  <Col>
+                  <Cards
+                  key={char.id} 
+                  image={char.image}/>
+                  </Col>
+                ))}
+            
+          </Row>
+        </div>
       </div>
     );
   }
