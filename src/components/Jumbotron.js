@@ -1,9 +1,12 @@
 import React from "react";
-import { directive } from "@babel/types";
 
 function Jumbotron(props) {
   return (
-   <div className="jumbotron">
+   <div className="jumbotron jumbotron-fluid">
+     <div className="container">
+       <div className="display-4">Minions Memory Game</div>
+       <div className="lead">Click a Minion but dont click the same Minion twice.</div>
+     </div>
 
    </div>
   );

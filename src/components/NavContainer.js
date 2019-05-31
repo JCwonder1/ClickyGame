@@ -6,7 +6,7 @@ function Nav(props) {
       <a className="navbar-brand" href="/">
         Clicky Game
       </a>
-      <p className="navbar-brand">Click on an image</p>
+      <p className="navbar-brand">{props.click}</p>
       <p className="navbar-brand">Score: {props.count}  |  Top Score: {props.score}</p>
     </nav>
   );
