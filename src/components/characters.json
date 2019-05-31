@@ -10,5 +10,29 @@
   {
     "id": 3,
     "image": "/img/3.jpg"
+  },
+  {
+    "id": 4,
+    "image": "/img/4.jpg"
+  },
+  {
+    "id": 5,
+    "image": "/img/5.jpg"
+  },
+  {
+    "id": 6,
+    "image": "/img/6.jpg"
+  },
+  {
+    "id": 7,
+    "image": "/img/7.jpg"
+  },
+  {
+    "id": 8,
+    "image": "/img/8.jpg"
+  },
+  {
+    "id": 9,
+    "image": "/img/9.jpg"
   }
 ]

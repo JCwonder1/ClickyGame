@@ -7,7 +7,7 @@ function Nav(props) {
         Clicky Game
       </a>
       <p className="navbar-brand">Click on an image</p>
-      <p className="navbar-brand">Score:{props.count} Top Score: {props.score}</p>
+      <p className="navbar-brand">Score: {props.count}  |  Top Score: {props.score}</p>
     </nav>
   );
 }
