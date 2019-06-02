@@ -98,6 +98,7 @@ class App extends React.Component {
                 key={index}
                 data={index}
                 id={char.id}
+                image={char.image}
                 divclass={this.state.imageClass}
                 handleIncrement={this.handleIncrement}
               />
