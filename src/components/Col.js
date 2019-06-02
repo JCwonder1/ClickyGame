@@ -1,9 +1,9 @@
 import React from "react";
 
-function Col(props) {
+function Col({fluid, children}) {
     return (
-     <div className="col-2">
-    
+     <div className="flex-items-default">
+       {children}
      </div>
     );
   }

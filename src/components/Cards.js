@@ -1,13 +1,19 @@
 import React from "react";
 
 function Cards(props){
-    console.log(props);
-    return(
-        <div className="card"> 
-            <img class="card-img" src={props.image} alt="" />
-            <p>{props.image}</p>
-        </div>
-
+    let image = `/img/${props.id}.jpg`;
+    
+    return (
+      <div className="card click-item">
+        <img
+          className={"card-img " + props.divclass}
+          src={image}
+          data-index={props.data}
+          alt=""
+          id={props.id}
+          onClick={props.handleIncrement}
+        />
+      </div>
     );
 
 }
