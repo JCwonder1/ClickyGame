@@ -97,6 +97,7 @@ class App extends React.Component {
               <Cards
                 key={index}
                 data={index}
+                image={char.image}
                 id={char.id}
                 divclass={this.state.imageClass}
                 handleIncrement={this.handleIncrement}
@@ -112,7 +113,3 @@ class App extends React.Component {
 export default App;
 
 
-//TODO: Build a Main Component
-//TODO: LOGIC : Declare and Empty Array
-//TODO: Build an Array of image names
-//TODO: Use the image name
